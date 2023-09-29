@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="400sp"
+        android:layout_height="400sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/tieText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"
+        tools:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/move8View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="moveEight"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toStartOf="@+id/move9View"
+        app:layout_constraintTop_toBottomOf="@+id/move5View"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/move5View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="moveFive"
+        app:layout_constraintBottom_toBottomOf="@+id/move4View"
+        app:layout_constraintEnd_toStartOf="@+id/move6View"
+        app:layout_constraintStart_toStartOf="@+id/move8View"
+        app:layout_constraintTop_toBottomOf="@+id/move2View"
+        tools:srcCompat="@drawable/o" />
+
+    <ImageView
+        android:id="@+id/move2View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="moveTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/move1View"
+        app:layout_constraintEnd_toStartOf="@+id/move3View"
+        app:layout_constraintStart_toStartOf="@+id/move5View"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/move6View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="moveSix"
+        app:layout_constraintBottom_toBottomOf="@+id/move5View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/move9View"
+        app:layout_constraintTop_toBottomOf="@+id/move3View"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/move9View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="moveNine"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move6View"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/move3View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="moveThree"
+        app:layout_constraintBottom_toBottomOf="@+id/move1View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/move6View"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/move4View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="150dp"
+        android:onClick="moveFour"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toStartOf="@+id/move5View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move1View"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/move1View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="270dp"
+        android:onClick="moveOne"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toStartOf="@+id/move2View"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView"
+        tools:srcCompat="@drawable/new_x" />
+
+    <ImageView
+        android:id="@+id/move7View"
+        android:layout_width="106sp"
+        android:layout_height="106sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="moveSeven"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toStartOf="@+id/move8View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move4View"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/playerXText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:text="PLAYER (X)"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/playerXScoreText"
+        app:layout_constraintEnd_toStartOf="@+id/tieText"
+        app:layout_constraintStart_toStartOf="@+id/backgroundView"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundView" />
+
+    <TextView
+        android:id="@+id/playerXScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="140dp"
+        android:text="Score"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/playerXText"
+        app:layout_constraintStart_toStartOf="@+id/playerXText"
+        app:layout_constraintTop_toBottomOf="@+id/playerXText" />
+
+    <TextView
+        android:id="@+id/tieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Tie"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tieTextScore"
+        app:layout_constraintEnd_toStartOf="@+id/playerOText"
+        app:layout_constraintStart_toEndOf="@+id/playerXText"
+        app:layout_constraintTop_toTopOf="@+id/playerOText" />
+
+    <TextView
+        android:id="@+id/tieTextScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="140dp"
+        android:text="Score"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tieText"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/tieText"
+        app:layout_constraintTop_toBottomOf="@+id/tieText" />
+
+    <TextView
+        android:id="@+id/playerOText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:text="PLAYER (O)"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/playerOTextScore"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundView"
+        app:layout_constraintStart_toEndOf="@+id/tieText"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundView" />
+
+    <TextView
+        android:id="@+id/playerOTextScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="140dp"
+        android:text="Score"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/playerOText"
+        app:layout_constraintStart_toStartOf="@+id/playerOText"
+        app:layout_constraintTop_toBottomOf="@+id/playerOText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NewAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item> <!-- Yeni ana renk -->
+        <item name="colorPrimaryDark">@color/red</item> <!-- Yeni koyu ana renk -->
+        <item name="colorAccent">@color/green</item> <!-- Yeni vurgu renk -->
+    </style>
+</resources>
